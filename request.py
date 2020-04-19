@@ -17,7 +17,7 @@ def cpf_analize(cpf_number):
 
 def person_insurance_simulation(cnpj, codigoModeloProposta, name, cpf,
                                 birth_date, work, earn, gender, uf):
-    params = (("cnpj", cnpj), ("codigoModeloProposta",codigoModeloProposta))
+    params = (("cnpj", cnpj), ("codigoModeloProposta", codigoModeloProposta))
     headers = {"X-Api-Key": "1e0d86b2-d0b2-4ddb-96b4-cdc907f7e5a8"}
     body = {
             "simulacoes": [
@@ -47,6 +47,8 @@ def person_insurance_simulation(cnpj, codigoModeloProposta, name, cpf,
 
 if __name__ == "__main__":
     print(cpf_analize(11855727676))
-    print(person_insurance_simulation(11321351000110, "YZ", "Luis Inacio gonzaga",
-                                    11855727676, "1980-10-20T00:00:00", "2410-05",
-                                    5000.0, 1, "MA"))
+    print(person_insurance_simulation(11321351000110, "YZ",
+                                      "Luis Inacio gonzaga",
+                                      11855727676,
+                                      "1980-10-20T00:00:00", "2410-05",
+                                      5000.0, 1, "MA"))
