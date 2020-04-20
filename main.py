@@ -67,9 +67,10 @@ def ensurance_simultaion():
                            1,
                            request.form['uf']))
 
+
 @app.route('/cpf', methods=['POST', 'GET'])
 def cpf_validate():
-    return render_template(     cpf_analize(request.form['cpf']))
+    return render_template(cpf_analize(request.form['cpf']))
 
 
 if __name__ == '__main__':
