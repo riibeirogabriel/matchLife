@@ -123,14 +123,14 @@
     <div class="main-block">
       <div class="left-part">
         <i class="fas fa-graduation-cap"></i>
-        <h1>Proposta de seguro de vida</h1>
-        <p>Ferramenta para simulação de contratos de seguro de vida da seguradora Mongeral Aegon.</p>
+        <h1>consultaDados</h1>
+        <p>Ferramenta para verificação de cpf e simulação de contratos de seguro de vida da seguradora Mongeral Aegon.</p>
         
       </div>
       <form action="/submit"  method="post">
         <div class="title">
           <i class="fas fa-pencil-alt"></i> 
-          <h2>Dados do possível cliente</h2>
+          <h2>Dados cliente seguro vida</h2>
         </div>
         <div class="info">
           <input class="fname" type="text" name="name" placeholder="Nome">
@@ -142,7 +142,17 @@
           <input type="text" name="gender" placeholder="Gênero">
           <input type="text" name="uf" placeholder="Estado">
         </div>
-        <button type="submit" href="/">Submit</button>
+        <button type="submit" href="/">Analizar</button>
+      </form>
+      <form action="/cpf"  method="post">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>validação de cpf</h2>
+        </div>
+        <div class="info">
+          <input class="fname" type="text" name="cpf" placeholder="Nome">
+        </div>
+        <button type="submit" href="/">Validar</button>
       </form>
     </div>
   </body>
