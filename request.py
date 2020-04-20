@@ -1,9 +1,11 @@
-import requests 
+import requests
 import json
 
 
-api_serpro_cpf_url = "https://gateway.gr1d.io/sandbox/serpro/consulta-cpf/v1/cpf/"
-api_mongeral_aegon_insurance = "https://gateway.gr1d.io/sandbox/mongeralaegon/v1/simulacao"
+api_serpro_cpf_url = "https://gateway.gr1d.io/sandbox/serpro/consulta-cpf/v1"\
+                     "/cpf/"
+api_mongeral_aegon_insurance = "https://gateway.gr1d.io/sandbox/mongeralaegon"\
+                               "/v1/simulacao"
 
 
 def cpf_analize(cpf_number):
